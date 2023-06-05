@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src 'self' data:" />
+  <title>Movie Title to Emoji</title>
+  <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/custom.css" rel="stylesheet">
+</head>
+<body class="container">
+  <div class="vh-100 d-flex justify-content-center align-items-center">
+    <div class="col-md-4 p-3 shadow-sm border rounded-5 border-primary">
+      <!-- Container -->
+      <div class="container rounded p-3 text-center">
+        <form id="movie_form">
+
+          <div class="tab-content" id="pills-tabContent">
+            <!-- Type: Text Only -->
+            <div class="tab-pane fade show active animate__animated animate__slideInUp" id="pills-text" role="tabpanel" aria-labelledby="pills-text-tab" tabindex="0">
+              <div class="card card-body">
+                <img class="img-fluid mb-3 animate__animated animate__fadeIn" src="./image/openai_logo.png">
+                <img class="img-fluid mb-3 animate__animated animate__fadeIn" src="./image/m2e.png">
+                <div class="form-floating">
+                  <input type="text" class="form-control form-input" id="movie_title" placeholder="Movie title" name="movie_title">
+                  <label for="movie_title">Movie title</label>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button class="btn btn-secondary text-white w-10 align-self-center m-1" type="submit">Submit</button>
+                </div>
+                <div class="form-floating">
+                  <input class="form-control" id="emoji_response" readonly>
+                  <label for="emoji_response">Result</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      <!-- End of Container -->
+      </div>
+    </div>
+  </div>
+  <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>

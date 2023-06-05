@@ -1,0 +1,29 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Frontend application using Electron with integration of OpenAI API and Supabase",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kryzz-mary-andig/frontendd.git"
+  },
+  "author": "Kryzz Mary E. Andig",
+  "license": "ISC",
+  
+  "devDependencies": {
+    "electron": "^24.3.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.22.0",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.2.3",
+    "dotenv": "^16.0.3",
+    "electron-builder": "^24.4.0",
+    "toastify": "^2.0.1",
+    "toastify-js": "^1.12.0"
+  }
+}
